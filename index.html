@@ -523,67 +523,78 @@ Milo Banks
 <span id="annotated-cell-10-12"><a href="#annotated-cell-10-12"></a>model<span class="op">.</span>run<span class="op">(</span><span class="dv">50</span><span class="op">,</span> <span class="dv">123</span><span class="op">);</span></span>
 <span id="annotated-cell-10-13"><a href="#annotated-cell-10-13"></a>model<span class="op">.</span>print<span class="op">();</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="demo-influenza-outbreak-in-slc-epiworldr" class="slide level2">
-<h2>Demo: Influenza Outbreak in SLC (EpiworldR)</h2>
-<div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co"># I'm not familiar with R, and want to ask if there are any examples</span></span>
-<span id="cb1-2"><a href=""></a><span class="co"># before I write this, so I'm not presenting faulty code.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<!-- ## Demo: Influenza Outbreak in SLC (EpiworldR)
+
+::: {.incremental}
+
+```r
+# I'm not familiar with R, and want to ask if there are any examples
+# before I write this, so I'm not presenting faulty code.
+```
+
+:::
+
+--- -->
 </section>
 <section id="demo-influenza-outbreak-in-slc-epiworldpy" class="slide level2">
 <h2>Demo: Influenza Outbreak in SLC (EpiworldPy)</h2>
 <div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a><span class="im">import</span> epiworldpy <span class="im">as</span> epiworld</span>
-<span id="cb2-2"><a href=""></a></span>
-<span id="cb2-3"><a href=""></a><span class="co"># Create the model.</span></span>
-<span id="cb2-4"><a href=""></a>model <span class="op">=</span> epiworld.ModelSIRCONN(</span>
-<span id="cb2-5"><a href=""></a>  name              <span class="op">=</span> <span class="st">'Influenza'</span>,</span>
-<span id="cb2-6"><a href=""></a>  n                 <span class="op">=</span> <span class="dv">50000</span>,</span>
-<span id="cb2-7"><a href=""></a>  prevalence        <span class="op">=</span> <span class="fl">.001</span>,</span>
-<span id="cb2-8"><a href=""></a>  contact_rate      <span class="op">=</span> <span class="fl">0.9</span>,</span>
-<span id="cb2-9"><a href=""></a>  transmission_rate <span class="op">=</span> <span class="fl">0.3</span>,</span>
-<span id="cb2-10"><a href=""></a>  recovery_rate     <span class="op">=</span> <span class="fl">0.5</span></span>
-<span id="cb2-11"><a href=""></a>)</span>
-<span id="cb2-12"><a href=""></a></span>
-<span id="cb2-13"><a href=""></a><span class="co"># Running and checking the results.</span></span>
-<span id="cb2-14"><a href=""></a>model.run(<span class="dv">50</span>, <span class="dv">123</span>)</span>
-<span id="cb2-15"><a href=""></a>model.<span class="bu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="im">import</span> epiworldpy <span class="im">as</span> epiworld</span>
+<span id="cb1-2"><a href=""></a></span>
+<span id="cb1-3"><a href=""></a><span class="co"># Create the model.</span></span>
+<span id="cb1-4"><a href=""></a>model <span class="op">=</span> epiworld.ModelSIRCONN(</span>
+<span id="cb1-5"><a href=""></a>  name              <span class="op">=</span> <span class="st">'Influenza'</span>,</span>
+<span id="cb1-6"><a href=""></a>  n                 <span class="op">=</span> <span class="dv">50000</span>,</span>
+<span id="cb1-7"><a href=""></a>  prevalence        <span class="op">=</span> <span class="fl">.001</span>,</span>
+<span id="cb1-8"><a href=""></a>  contact_rate      <span class="op">=</span> <span class="fl">0.9</span>,</span>
+<span id="cb1-9"><a href=""></a>  transmission_rate <span class="op">=</span> <span class="fl">0.3</span>,</span>
+<span id="cb1-10"><a href=""></a>  recovery_rate     <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb1-11"><a href=""></a>)</span>
+<span id="cb1-12"><a href=""></a></span>
+<span id="cb1-13"><a href=""></a><span class="co"># Running and checking the results.</span></span>
+<span id="cb1-14"><a href=""></a>model.run(<span class="dv">50</span>, <span class="dv">123</span>)</span>
+<span id="cb1-15"><a href=""></a>model.<span class="bu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="side-by-side-comparison" class="slide level2">
-<h2>Side by Side Comparison</h2>
-<div>
+<!-- ---
 
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="column quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="co"># I'm not familiar with R, and want</span></span>
-<span id="cb3-2"><a href=""></a><span class="co"># to ask if there are any examples</span></span>
-<span id="cb3-3"><a href=""></a><span class="co"># before I write this, so I'm not</span></span>
-<span id="cb3-4"><a href=""></a><span class="co"># presenting faulty code.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="im">import</span> epiworldpy <span class="im">as</span> epiworld</span>
-<span id="cb4-2"><a href=""></a></span>
-<span id="cb4-3"><a href=""></a><span class="co"># Create the model.</span></span>
-<span id="cb4-4"><a href=""></a>model <span class="op">=</span> epiworld.ModelSIRCONN(</span>
-<span id="cb4-5"><a href=""></a>  name              <span class="op">=</span> <span class="st">'Influenza'</span>,</span>
-<span id="cb4-6"><a href=""></a>  n                 <span class="op">=</span> <span class="dv">50000</span>,</span>
-<span id="cb4-7"><a href=""></a>  prevalence        <span class="op">=</span> <span class="fl">.001</span>,</span>
-<span id="cb4-8"><a href=""></a>  contact_rate      <span class="op">=</span> <span class="fl">2.0</span>,</span>
-<span id="cb4-9"><a href=""></a>  transmission_rate <span class="op">=</span> <span class="fl">0.3</span>,</span>
-<span id="cb4-10"><a href=""></a>  recovery_rate     <span class="op">=</span> <span class="fl">0.5</span></span>
-<span id="cb4-11"><a href=""></a>)</span>
-<span id="cb4-12"><a href=""></a></span>
-<span id="cb4-13"><a href=""></a><span class="co"># Running and checking the results.</span></span>
-<span id="cb4-14"><a href=""></a>model.run(<span class="dv">50</span>, <span class="dv">123</span>)</span>
-<span id="cb4-15"><a href=""></a>model.<span class="bu">print</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-</div>
-</section>
-<section class="slide level2">
+## Side by Side Comparison
 
+::: {layout-ncol=2}
+
+::: {.column width="50%" .incremental}
+
+```r
+# I'm not familiar with R, and want
+# to ask if there are any examples
+# before I write this, so I'm not
+# presenting faulty code.
+```
+
+:::
+
+::: {.column width="50%" .incremental}
+
+```python
+import epiworldpy as epiworld
+
+# Create the model.
+model = epiworld.ModelSIRCONN(
+  name              = 'Influenza',
+  n                 = 50000,
+  prevalence        = .001,
+  contact_rate      = 2.0,
+  transmission_rate = 0.3,
+  recovery_rate     = 0.5
+)
+
+# Running and checking the results.
+model.run(50, 123)
+model.print()
+```
+
+:::
+
+::: -->
 <!-- ## Demo: Influenza Outbreak in SLC (EpiworldRShiny)
 
 ::: {.v-center-container}
@@ -607,39 +618,39 @@ Milo Banks
 <section id="demo-graphing-model-compartments" class="slide level2">
 <h2>Demo: Graphing Model Compartments</h2>
 <div id="cell-model-compartments" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb5-2"><a href=""></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-3"><a href=""></a></span>
-<span id="cb5-4"><a href=""></a><span class="co"># Get the data from the database.</span></span>
-<span id="cb5-5"><a href=""></a>history <span class="op">=</span> model.get_db().get_hist_total()</span>
-<span id="cb5-6"><a href=""></a></span>
-<span id="cb5-7"><a href=""></a><span class="co"># Extract unique states and dates.</span></span>
-<span id="cb5-8"><a href=""></a>unique_states <span class="op">=</span> np.unique(history[<span class="st">'states'</span>])</span>
-<span id="cb5-9"><a href=""></a>unique_dates <span class="op">=</span> np.unique(history[<span class="st">'dates'</span>])</span>
-<span id="cb5-10"><a href=""></a></span>
-<span id="cb5-11"><a href=""></a><span class="co"># Initialize a dictionary to store time series data for each state.</span></span>
-<span id="cb5-12"><a href=""></a>time_series_data <span class="op">=</span> {state: [] <span class="cf">for</span> state <span class="kw">in</span> unique_states}</span>
-<span id="cb5-13"><a href=""></a></span>
-<span id="cb5-14"><a href=""></a><span class="co"># Populate the time series data for each state.</span></span>
-<span id="cb5-15"><a href=""></a><span class="cf">for</span> state <span class="kw">in</span> unique_states:</span>
-<span id="cb5-16"><a href=""></a>  <span class="cf">for</span> date <span class="kw">in</span> unique_dates:</span>
-<span id="cb5-17"><a href=""></a>    <span class="co"># Get the count for the current state and date.</span></span>
-<span id="cb5-18"><a href=""></a>    mask <span class="op">=</span> (history[<span class="st">'states'</span>] <span class="op">==</span> state) <span class="op">&amp;</span> (history[<span class="st">'dates'</span>] <span class="op">==</span> date)</span>
-<span id="cb5-19"><a href=""></a>    count <span class="op">=</span> history[<span class="st">'counts'</span>][mask][<span class="dv">0</span>]</span>
-<span id="cb5-20"><a href=""></a>    time_series_data[state].append(count)</span>
-<span id="cb5-21"><a href=""></a></span>
-<span id="cb5-22"><a href=""></a><span class="co"># Start the plotting!</span></span>
-<span id="cb5-23"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb5-24"><a href=""></a></span>
-<span id="cb5-25"><a href=""></a><span class="cf">for</span> state <span class="kw">in</span> unique_states:</span>
-<span id="cb5-26"><a href=""></a>  plt.plot(unique_dates, time_series_data[state], label<span class="op">=</span>state)</span>
-<span id="cb5-27"><a href=""></a></span>
-<span id="cb5-28"><a href=""></a>plt.xlabel(<span class="st">'Day'</span>)</span>
-<span id="cb5-29"><a href=""></a>plt.ylabel(<span class="st">'Count'</span>)</span>
-<span id="cb5-30"><a href=""></a>plt.title(<span class="st">'Influenza SEIR Model Data'</span>)</span>
-<span id="cb5-31"><a href=""></a>plt.legend()</span>
-<span id="cb5-32"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb5-33"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href=""></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href=""></a></span>
+<span id="cb2-4"><a href=""></a><span class="co"># Get the data from the database.</span></span>
+<span id="cb2-5"><a href=""></a>history <span class="op">=</span> model.get_db().get_hist_total()</span>
+<span id="cb2-6"><a href=""></a></span>
+<span id="cb2-7"><a href=""></a><span class="co"># Extract unique states and dates.</span></span>
+<span id="cb2-8"><a href=""></a>unique_states <span class="op">=</span> np.unique(history[<span class="st">'states'</span>])</span>
+<span id="cb2-9"><a href=""></a>unique_dates <span class="op">=</span> np.unique(history[<span class="st">'dates'</span>])</span>
+<span id="cb2-10"><a href=""></a></span>
+<span id="cb2-11"><a href=""></a><span class="co"># Initialize a dictionary to store time series data for each state.</span></span>
+<span id="cb2-12"><a href=""></a>time_series_data <span class="op">=</span> {state: [] <span class="cf">for</span> state <span class="kw">in</span> unique_states}</span>
+<span id="cb2-13"><a href=""></a></span>
+<span id="cb2-14"><a href=""></a><span class="co"># Populate the time series data for each state.</span></span>
+<span id="cb2-15"><a href=""></a><span class="cf">for</span> state <span class="kw">in</span> unique_states:</span>
+<span id="cb2-16"><a href=""></a>  <span class="cf">for</span> date <span class="kw">in</span> unique_dates:</span>
+<span id="cb2-17"><a href=""></a>    <span class="co"># Get the count for the current state and date.</span></span>
+<span id="cb2-18"><a href=""></a>    mask <span class="op">=</span> (history[<span class="st">'states'</span>] <span class="op">==</span> state) <span class="op">&amp;</span> (history[<span class="st">'dates'</span>] <span class="op">==</span> date)</span>
+<span id="cb2-19"><a href=""></a>    count <span class="op">=</span> history[<span class="st">'counts'</span>][mask][<span class="dv">0</span>]</span>
+<span id="cb2-20"><a href=""></a>    time_series_data[state].append(count)</span>
+<span id="cb2-21"><a href=""></a></span>
+<span id="cb2-22"><a href=""></a><span class="co"># Start the plotting!</span></span>
+<span id="cb2-23"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb2-24"><a href=""></a></span>
+<span id="cb2-25"><a href=""></a><span class="cf">for</span> state <span class="kw">in</span> unique_states:</span>
+<span id="cb2-26"><a href=""></a>  plt.plot(unique_dates, time_series_data[state], label<span class="op">=</span>state)</span>
+<span id="cb2-27"><a href=""></a></span>
+<span id="cb2-28"><a href=""></a>plt.xlabel(<span class="st">'Day'</span>)</span>
+<span id="cb2-29"><a href=""></a>plt.ylabel(<span class="st">'Count'</span>)</span>
+<span id="cb2-30"><a href=""></a>plt.title(<span class="st">'Influenza SEIR Model Data'</span>)</span>
+<span id="cb2-31"><a href=""></a>plt.legend()</span>
+<span id="cb2-32"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb2-33"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -654,30 +665,30 @@ Milo Banks
 </div></section><section id="demo-effective-reproduction-rates" class="slide level2">
 <h2>Demo: Effective Reproduction Rates</h2>
 <div id="cell-effective-reproductive-rates" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a><span class="co"># Get the data from the database.</span></span>
-<span id="cb6-2"><a href=""></a>reproductive_data <span class="op">=</span> model.get_db().get_reproductive_number()</span>
-<span id="cb6-3"><a href=""></a></span>
-<span id="cb6-4"><a href=""></a><span class="co"># Start the plotting!</span></span>
-<span id="cb6-5"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb6-6"><a href=""></a></span>
-<span id="cb6-7"><a href=""></a><span class="cf">for</span> virus_id, virus_data <span class="kw">in</span> <span class="bu">enumerate</span>(reproductive_data):</span>
-<span id="cb6-8"><a href=""></a>    average_rts <span class="op">=</span> <span class="bu">list</span>()</span>
-<span id="cb6-9"><a href=""></a></span>
-<span id="cb6-10"><a href=""></a>    <span class="cf">for</span> date_data <span class="kw">in</span> virus_data:</span>
-<span id="cb6-11"><a href=""></a>        <span class="cf">if</span> <span class="kw">not</span> date_data:</span>
-<span id="cb6-12"><a href=""></a>            <span class="cf">continue</span></span>
-<span id="cb6-13"><a href=""></a></span>
-<span id="cb6-14"><a href=""></a>        keys_array <span class="op">=</span> np.array(<span class="bu">list</span>(date_data.values()), dtype<span class="op">=</span>np.float64)</span>
-<span id="cb6-15"><a href=""></a>        average_rts.append(np.mean(keys_array))</span>
-<span id="cb6-16"><a href=""></a></span>
-<span id="cb6-17"><a href=""></a>    plt.plot(<span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(average_rts)), average_rts, label<span class="op">=</span><span class="ss">f"Virus </span><span class="sc">{</span>virus_id<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb6-18"><a href=""></a></span>
-<span id="cb6-19"><a href=""></a>plt.xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb6-20"><a href=""></a>plt.ylabel(<span class="st">'Effective Reproductive Rate'</span>)</span>
-<span id="cb6-21"><a href=""></a>plt.title(<span class="st">'Influenza SEIR Model Effective Reproductive Rate'</span>)</span>
-<span id="cb6-22"><a href=""></a>plt.legend()</span>
-<span id="cb6-23"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb6-24"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a><span class="co"># Get the data from the database.</span></span>
+<span id="cb3-2"><a href=""></a>reproductive_data <span class="op">=</span> model.get_db().get_reproductive_number()</span>
+<span id="cb3-3"><a href=""></a></span>
+<span id="cb3-4"><a href=""></a><span class="co"># Start the plotting!</span></span>
+<span id="cb3-5"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb3-6"><a href=""></a></span>
+<span id="cb3-7"><a href=""></a><span class="cf">for</span> virus_id, virus_data <span class="kw">in</span> <span class="bu">enumerate</span>(reproductive_data):</span>
+<span id="cb3-8"><a href=""></a>    average_rts <span class="op">=</span> <span class="bu">list</span>()</span>
+<span id="cb3-9"><a href=""></a></span>
+<span id="cb3-10"><a href=""></a>    <span class="cf">for</span> date_data <span class="kw">in</span> virus_data:</span>
+<span id="cb3-11"><a href=""></a>        <span class="cf">if</span> <span class="kw">not</span> date_data:</span>
+<span id="cb3-12"><a href=""></a>            <span class="cf">continue</span></span>
+<span id="cb3-13"><a href=""></a></span>
+<span id="cb3-14"><a href=""></a>        keys_array <span class="op">=</span> np.array(<span class="bu">list</span>(date_data.values()), dtype<span class="op">=</span>np.float64)</span>
+<span id="cb3-15"><a href=""></a>        average_rts.append(np.mean(keys_array))</span>
+<span id="cb3-16"><a href=""></a></span>
+<span id="cb3-17"><a href=""></a>    plt.plot(<span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(average_rts)), average_rts, label<span class="op">=</span><span class="ss">f"Virus </span><span class="sc">{</span>virus_id<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-18"><a href=""></a></span>
+<span id="cb3-19"><a href=""></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb3-20"><a href=""></a>plt.ylabel(<span class="st">'Effective Reproductive Rate'</span>)</span>
+<span id="cb3-21"><a href=""></a>plt.title(<span class="st">'Influenza SEIR Model Effective Reproductive Rate'</span>)</span>
+<span id="cb3-22"><a href=""></a>plt.legend()</span>
+<span id="cb3-23"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb3-24"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -692,24 +703,24 @@ Milo Banks
 </div></section><section id="demo-case-type-incidence" class="slide level2">
 <h2>Demo: Case Type Incidence</h2>
 <div id="cell-case-type-incidence" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb7-2"><a href=""></a></span>
-<span id="cb7-3"><a href=""></a><span class="co"># Get the data from the database.</span></span>
-<span id="cb7-4"><a href=""></a>transition_matrix <span class="op">=</span> pd.DataFrame(model.get_db().get_hist_transition_matrix(<span class="va">False</span>))</span>
-<span id="cb7-5"><a href=""></a>grouped <span class="op">=</span> transition_matrix.groupby([<span class="st">'dates'</span>, <span class="st">'states_to'</span>])[<span class="st">'counts'</span>].<span class="bu">sum</span>().unstack().fillna(<span class="dv">0</span>)</span>
-<span id="cb7-6"><a href=""></a>daily_incidence <span class="op">=</span> grouped.diff().fillna(<span class="dv">0</span>)</span>
-<span id="cb7-7"><a href=""></a></span>
-<span id="cb7-8"><a href=""></a><span class="co"># Plot!</span></span>
-<span id="cb7-9"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb7-10"><a href=""></a>plt.plot(daily_incidence.index, daily_incidence[<span class="st">'Infected'</span>], label<span class="op">=</span><span class="st">'New Infected'</span>)</span>
-<span id="cb7-11"><a href=""></a>plt.plot(daily_incidence.index, daily_incidence[<span class="st">'Recovered'</span>], label<span class="op">=</span><span class="st">'New Recovered'</span>)</span>
-<span id="cb7-12"><a href=""></a></span>
-<span id="cb7-13"><a href=""></a>plt.title(<span class="st">'Daily Incidence of Infected and Recovered Cases'</span>)</span>
-<span id="cb7-14"><a href=""></a>plt.xlabel(<span class="st">'Days'</span>)</span>
-<span id="cb7-15"><a href=""></a>plt.ylabel(<span class="st">'Number of New Cases'</span>)</span>
-<span id="cb7-16"><a href=""></a>plt.legend()</span>
-<span id="cb7-17"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb7-18"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-2"><a href=""></a></span>
+<span id="cb4-3"><a href=""></a><span class="co"># Get the data from the database.</span></span>
+<span id="cb4-4"><a href=""></a>transition_matrix <span class="op">=</span> pd.DataFrame(model.get_db().get_hist_transition_matrix(<span class="va">False</span>))</span>
+<span id="cb4-5"><a href=""></a>grouped <span class="op">=</span> transition_matrix.groupby([<span class="st">'dates'</span>, <span class="st">'states_to'</span>])[<span class="st">'counts'</span>].<span class="bu">sum</span>().unstack().fillna(<span class="dv">0</span>)</span>
+<span id="cb4-6"><a href=""></a>daily_incidence <span class="op">=</span> grouped.diff().fillna(<span class="dv">0</span>)</span>
+<span id="cb4-7"><a href=""></a></span>
+<span id="cb4-8"><a href=""></a><span class="co"># Plot!</span></span>
+<span id="cb4-9"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb4-10"><a href=""></a>plt.plot(daily_incidence.index, daily_incidence[<span class="st">'Infected'</span>], label<span class="op">=</span><span class="st">'New Infected'</span>)</span>
+<span id="cb4-11"><a href=""></a>plt.plot(daily_incidence.index, daily_incidence[<span class="st">'Recovered'</span>], label<span class="op">=</span><span class="st">'New Recovered'</span>)</span>
+<span id="cb4-12"><a href=""></a></span>
+<span id="cb4-13"><a href=""></a>plt.title(<span class="st">'Daily Incidence of Infected and Recovered Cases'</span>)</span>
+<span id="cb4-14"><a href=""></a>plt.xlabel(<span class="st">'Days'</span>)</span>
+<span id="cb4-15"><a href=""></a>plt.ylabel(<span class="st">'Number of New Cases'</span>)</span>
+<span id="cb4-16"><a href=""></a>plt.legend()</span>
+<span id="cb4-17"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb4-18"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -724,41 +735,41 @@ Milo Banks
 </div></section><section id="demo-generation-time" class="slide level2">
 <h2>Demo: Generation Time</h2>
 <div id="cell-generation-time" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href=""></a><span class="im">from</span> collections <span class="im">import</span> defaultdict</span>
-<span id="cb8-2"><a href=""></a></span>
-<span id="cb8-3"><a href=""></a><span class="co"># Get the data from the database.</span></span>
-<span id="cb8-4"><a href=""></a>generation_time <span class="op">=</span> model.get_db().get_generation_time()</span>
-<span id="cb8-5"><a href=""></a>agents <span class="op">=</span> generation_time[<span class="st">'agents'</span>]</span>
-<span id="cb8-6"><a href=""></a>viruses <span class="op">=</span> generation_time[<span class="st">'viruses'</span>]</span>
-<span id="cb8-7"><a href=""></a>times <span class="op">=</span> generation_time[<span class="st">'times'</span>]</span>
-<span id="cb8-8"><a href=""></a>gentimes <span class="op">=</span> generation_time[<span class="st">'gentimes'</span>]</span>
-<span id="cb8-9"><a href=""></a></span>
-<span id="cb8-10"><a href=""></a><span class="co"># Data formatting.</span></span>
-<span id="cb8-11"><a href=""></a>unique_viruses <span class="op">=</span> np.unique(viruses)</span>
-<span id="cb8-12"><a href=""></a>data <span class="op">=</span> defaultdict(<span class="kw">lambda</span>: defaultdict(<span class="bu">list</span>))</span>
-<span id="cb8-13"><a href=""></a></span>
-<span id="cb8-14"><a href=""></a><span class="cf">for</span> agent, virus, time, gentime <span class="kw">in</span> <span class="bu">zip</span>(agents, viruses, times, gentimes):</span>
-<span id="cb8-15"><a href=""></a>    data[virus][time].append(gentime)</span>
-<span id="cb8-16"><a href=""></a></span>
-<span id="cb8-17"><a href=""></a>average_data <span class="op">=</span> {virus: {} <span class="cf">for</span> virus <span class="kw">in</span> unique_viruses}</span>
-<span id="cb8-18"><a href=""></a></span>
-<span id="cb8-19"><a href=""></a><span class="cf">for</span> virus, time_dict <span class="kw">in</span> data.items():</span>
-<span id="cb8-20"><a href=""></a>    <span class="cf">for</span> time, gentime_list <span class="kw">in</span> time_dict.items():</span>
-<span id="cb8-21"><a href=""></a>        average_data[virus][time] <span class="op">=</span> np.mean(gentime_list)</span>
-<span id="cb8-22"><a href=""></a></span>
-<span id="cb8-23"><a href=""></a><span class="co"># Plotting.</span></span>
-<span id="cb8-24"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb8-25"><a href=""></a><span class="cf">for</span> virus, time_dict <span class="kw">in</span> average_data.items():</span>
-<span id="cb8-26"><a href=""></a>    times <span class="op">=</span> <span class="bu">sorted</span>(time_dict.keys())</span>
-<span id="cb8-27"><a href=""></a>    gentimes <span class="op">=</span> [time_dict[time] <span class="cf">for</span> time <span class="kw">in</span> times]</span>
-<span id="cb8-28"><a href=""></a>    plt.plot(times, gentimes, label<span class="op">=</span><span class="ss">f'Virus </span><span class="sc">{</span>virus<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb8-29"><a href=""></a></span>
-<span id="cb8-30"><a href=""></a>plt.xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb8-31"><a href=""></a>plt.ylabel(<span class="st">'Generation Time'</span>)</span>
-<span id="cb8-32"><a href=""></a>plt.title(<span class="st">'Influenza SEIR Model Generation Time'</span>)</span>
-<span id="cb8-33"><a href=""></a>plt.legend()</span>
-<span id="cb8-34"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb8-35"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="im">from</span> collections <span class="im">import</span> defaultdict</span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a><span class="co"># Get the data from the database.</span></span>
+<span id="cb5-4"><a href=""></a>generation_time <span class="op">=</span> model.get_db().get_generation_time()</span>
+<span id="cb5-5"><a href=""></a>agents <span class="op">=</span> generation_time[<span class="st">'agents'</span>]</span>
+<span id="cb5-6"><a href=""></a>viruses <span class="op">=</span> generation_time[<span class="st">'viruses'</span>]</span>
+<span id="cb5-7"><a href=""></a>times <span class="op">=</span> generation_time[<span class="st">'times'</span>]</span>
+<span id="cb5-8"><a href=""></a>gentimes <span class="op">=</span> generation_time[<span class="st">'gentimes'</span>]</span>
+<span id="cb5-9"><a href=""></a></span>
+<span id="cb5-10"><a href=""></a><span class="co"># Data formatting.</span></span>
+<span id="cb5-11"><a href=""></a>unique_viruses <span class="op">=</span> np.unique(viruses)</span>
+<span id="cb5-12"><a href=""></a>data <span class="op">=</span> defaultdict(<span class="kw">lambda</span>: defaultdict(<span class="bu">list</span>))</span>
+<span id="cb5-13"><a href=""></a></span>
+<span id="cb5-14"><a href=""></a><span class="cf">for</span> agent, virus, time, gentime <span class="kw">in</span> <span class="bu">zip</span>(agents, viruses, times, gentimes):</span>
+<span id="cb5-15"><a href=""></a>    data[virus][time].append(gentime)</span>
+<span id="cb5-16"><a href=""></a></span>
+<span id="cb5-17"><a href=""></a>average_data <span class="op">=</span> {virus: {} <span class="cf">for</span> virus <span class="kw">in</span> unique_viruses}</span>
+<span id="cb5-18"><a href=""></a></span>
+<span id="cb5-19"><a href=""></a><span class="cf">for</span> virus, time_dict <span class="kw">in</span> data.items():</span>
+<span id="cb5-20"><a href=""></a>    <span class="cf">for</span> time, gentime_list <span class="kw">in</span> time_dict.items():</span>
+<span id="cb5-21"><a href=""></a>        average_data[virus][time] <span class="op">=</span> np.mean(gentime_list)</span>
+<span id="cb5-22"><a href=""></a></span>
+<span id="cb5-23"><a href=""></a><span class="co"># Plotting.</span></span>
+<span id="cb5-24"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb5-25"><a href=""></a><span class="cf">for</span> virus, time_dict <span class="kw">in</span> average_data.items():</span>
+<span id="cb5-26"><a href=""></a>    times <span class="op">=</span> <span class="bu">sorted</span>(time_dict.keys())</span>
+<span id="cb5-27"><a href=""></a>    gentimes <span class="op">=</span> [time_dict[time] <span class="cf">for</span> time <span class="kw">in</span> times]</span>
+<span id="cb5-28"><a href=""></a>    plt.plot(times, gentimes, label<span class="op">=</span><span class="ss">f'Virus </span><span class="sc">{</span>virus<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb5-29"><a href=""></a></span>
+<span id="cb5-30"><a href=""></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb5-31"><a href=""></a>plt.ylabel(<span class="st">'Generation Time'</span>)</span>
+<span id="cb5-32"><a href=""></a>plt.title(<span class="st">'Influenza SEIR Model Generation Time'</span>)</span>
+<span id="cb5-33"><a href=""></a>plt.legend()</span>
+<span id="cb5-34"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb5-35"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -773,60 +784,60 @@ Milo Banks
 </div></section><section id="demo-agent-agent-interactions" class="slide level2">
 <h2>Demo: Agent-Agent Interactions</h2>
 <div id="cell-agent-agent-interactions" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href=""></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
-<span id="cb9-2"><a href=""></a><span class="im">from</span> matplotlib.animation <span class="im">import</span> FuncAnimation</span>
-<span id="cb9-3"><a href=""></a></span>
-<span id="cb9-4"><a href=""></a><span class="co"># Get the data from the database.</span></span>
-<span id="cb9-5"><a href=""></a>transmissions <span class="op">=</span> model.get_db().get_transmissions()</span>
-<span id="cb9-6"><a href=""></a>start <span class="op">=</span> transmissions[<span class="st">'source_exposure_dates'</span>]</span>
-<span id="cb9-7"><a href=""></a>end <span class="op">=</span> transmissions[<span class="st">'dates'</span>]</span>
-<span id="cb9-8"><a href=""></a>source <span class="op">=</span> transmissions[<span class="st">'sources'</span>]</span>
-<span id="cb9-9"><a href=""></a>target <span class="op">=</span> transmissions[<span class="st">'targets'</span>]</span>
-<span id="cb9-10"><a href=""></a>days <span class="op">=</span> <span class="bu">max</span>(end)</span>
-<span id="cb9-11"><a href=""></a></span>
-<span id="cb9-12"><a href=""></a>graph <span class="op">=</span> nx.Graph()</span>
-<span id="cb9-13"><a href=""></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">4</span>))</span>
-<span id="cb9-14"><a href=""></a></span>
-<span id="cb9-15"><a href=""></a><span class="co"># Animation function.</span></span>
-<span id="cb9-16"><a href=""></a>to_track <span class="op">=</span> { source[<span class="dv">0</span>] }</span>
-<span id="cb9-17"><a href=""></a><span class="kw">def</span> update(frame):</span>
-<span id="cb9-18"><a href=""></a>    ax.clear()</span>
-<span id="cb9-19"><a href=""></a></span>
-<span id="cb9-20"><a href=""></a>    agents_involved_today <span class="op">=</span> <span class="bu">set</span>()</span>
-<span id="cb9-21"><a href=""></a>    agents_relationships_we_care_about <span class="op">=</span> []</span>
-<span id="cb9-22"><a href=""></a></span>
-<span id="cb9-23"><a href=""></a>    <span class="co"># Get only the agents involved in the current frame.</span></span>
-<span id="cb9-24"><a href=""></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(start)):</span>
-<span id="cb9-25"><a href=""></a>        <span class="cf">if</span> start[i] <span class="op">&lt;=</span> frame <span class="op">&lt;=</span> end[i]:</span>
-<span id="cb9-26"><a href=""></a>            agents_involved_today.add((source[i], target[i]))</span>
-<span id="cb9-27"><a href=""></a></span>
-<span id="cb9-28"><a href=""></a>    <span class="co"># Get only today's agents who have some connection to agents</span></span>
-<span id="cb9-29"><a href=""></a>    <span class="co"># we've seen before.</span></span>
-<span id="cb9-30"><a href=""></a>    <span class="cf">for</span> agent <span class="kw">in</span> agents_involved_today:</span>
-<span id="cb9-31"><a href=""></a>        <span class="cf">if</span> agent[<span class="dv">0</span>] <span class="kw">in</span> to_track <span class="kw">or</span> agent[<span class="dv">1</span>] <span class="kw">in</span> to_track:</span>
-<span id="cb9-32"><a href=""></a>            to_track.add(agent[<span class="dv">0</span>])</span>
-<span id="cb9-33"><a href=""></a>            to_track.add(agent[<span class="dv">1</span>])</span>
-<span id="cb9-34"><a href=""></a>            graph.add_edge(agent[<span class="dv">0</span>], agent[<span class="dv">1</span>])</span>
-<span id="cb9-35"><a href=""></a></span>
-<span id="cb9-36"><a href=""></a>    <span class="co"># Lay and space them out.</span></span>
-<span id="cb9-37"><a href=""></a>    pos <span class="op">=</span> nx.kamada_kawai_layout(graph)</span>
-<span id="cb9-38"><a href=""></a></span>
-<span id="cb9-39"><a href=""></a>    options <span class="op">=</span> {</span>
-<span id="cb9-40"><a href=""></a>        <span class="st">"with_labels"</span>: <span class="va">True</span>,</span>
-<span id="cb9-41"><a href=""></a>        <span class="st">"node_size"</span>: <span class="dv">300</span>,</span>
-<span id="cb9-42"><a href=""></a>        <span class="st">"font_size"</span>: <span class="dv">6</span>,</span>
-<span id="cb9-43"><a href=""></a>        <span class="st">"node_color"</span>: <span class="st">"white"</span>,</span>
-<span id="cb9-44"><a href=""></a>        <span class="st">"edgecolors"</span>: <span class="st">"white"</span>,</span>
-<span id="cb9-45"><a href=""></a>        <span class="st">"linewidths"</span>: <span class="dv">1</span>,</span>
-<span id="cb9-46"><a href=""></a>        <span class="st">"width"</span>: <span class="dv">1</span>,</span>
-<span id="cb9-47"><a href=""></a>    }</span>
-<span id="cb9-48"><a href=""></a></span>
-<span id="cb9-49"><a href=""></a>    <span class="co"># Graph!</span></span>
-<span id="cb9-50"><a href=""></a>    nx.draw_networkx(graph, pos, <span class="op">**</span>options)</span>
-<span id="cb9-51"><a href=""></a>    ax.set_title(<span class="ss">f"Influenza SEIR Model Agent Contact (Day </span><span class="sc">{</span>frame<span class="sc">}</span><span class="ss">)"</span>)</span>
-<span id="cb9-52"><a href=""></a></span>
-<span id="cb9-53"><a href=""></a>ani <span class="op">=</span> FuncAnimation(fig, update, frames<span class="op">=</span><span class="bu">int</span>(days<span class="op">/</span><span class="dv">3</span>), interval<span class="op">=</span><span class="dv">200</span>, repeat<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-54"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb6-2"><a href=""></a><span class="im">from</span> matplotlib.animation <span class="im">import</span> FuncAnimation</span>
+<span id="cb6-3"><a href=""></a></span>
+<span id="cb6-4"><a href=""></a><span class="co"># Get the data from the database.</span></span>
+<span id="cb6-5"><a href=""></a>transmissions <span class="op">=</span> model.get_db().get_transmissions()</span>
+<span id="cb6-6"><a href=""></a>start <span class="op">=</span> transmissions[<span class="st">'source_exposure_dates'</span>]</span>
+<span id="cb6-7"><a href=""></a>end <span class="op">=</span> transmissions[<span class="st">'dates'</span>]</span>
+<span id="cb6-8"><a href=""></a>source <span class="op">=</span> transmissions[<span class="st">'sources'</span>]</span>
+<span id="cb6-9"><a href=""></a>target <span class="op">=</span> transmissions[<span class="st">'targets'</span>]</span>
+<span id="cb6-10"><a href=""></a>days <span class="op">=</span> <span class="bu">max</span>(end)</span>
+<span id="cb6-11"><a href=""></a></span>
+<span id="cb6-12"><a href=""></a>graph <span class="op">=</span> nx.Graph()</span>
+<span id="cb6-13"><a href=""></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">6</span>,<span class="dv">4</span>))</span>
+<span id="cb6-14"><a href=""></a></span>
+<span id="cb6-15"><a href=""></a><span class="co"># Animation function.</span></span>
+<span id="cb6-16"><a href=""></a>to_track <span class="op">=</span> { source[<span class="dv">0</span>] }</span>
+<span id="cb6-17"><a href=""></a><span class="kw">def</span> update(frame):</span>
+<span id="cb6-18"><a href=""></a>    ax.clear()</span>
+<span id="cb6-19"><a href=""></a></span>
+<span id="cb6-20"><a href=""></a>    agents_involved_today <span class="op">=</span> <span class="bu">set</span>()</span>
+<span id="cb6-21"><a href=""></a>    agents_relationships_we_care_about <span class="op">=</span> []</span>
+<span id="cb6-22"><a href=""></a></span>
+<span id="cb6-23"><a href=""></a>    <span class="co"># Get only the agents involved in the current frame.</span></span>
+<span id="cb6-24"><a href=""></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(start)):</span>
+<span id="cb6-25"><a href=""></a>        <span class="cf">if</span> start[i] <span class="op">&lt;=</span> frame <span class="op">&lt;=</span> end[i]:</span>
+<span id="cb6-26"><a href=""></a>            agents_involved_today.add((source[i], target[i]))</span>
+<span id="cb6-27"><a href=""></a></span>
+<span id="cb6-28"><a href=""></a>    <span class="co"># Get only today's agents who have some connection to agents</span></span>
+<span id="cb6-29"><a href=""></a>    <span class="co"># we've seen before.</span></span>
+<span id="cb6-30"><a href=""></a>    <span class="cf">for</span> agent <span class="kw">in</span> agents_involved_today:</span>
+<span id="cb6-31"><a href=""></a>        <span class="cf">if</span> agent[<span class="dv">0</span>] <span class="kw">in</span> to_track <span class="kw">or</span> agent[<span class="dv">1</span>] <span class="kw">in</span> to_track:</span>
+<span id="cb6-32"><a href=""></a>            to_track.add(agent[<span class="dv">0</span>])</span>
+<span id="cb6-33"><a href=""></a>            to_track.add(agent[<span class="dv">1</span>])</span>
+<span id="cb6-34"><a href=""></a>            graph.add_edge(agent[<span class="dv">0</span>], agent[<span class="dv">1</span>])</span>
+<span id="cb6-35"><a href=""></a></span>
+<span id="cb6-36"><a href=""></a>    <span class="co"># Lay and space them out.</span></span>
+<span id="cb6-37"><a href=""></a>    pos <span class="op">=</span> nx.kamada_kawai_layout(graph)</span>
+<span id="cb6-38"><a href=""></a></span>
+<span id="cb6-39"><a href=""></a>    options <span class="op">=</span> {</span>
+<span id="cb6-40"><a href=""></a>        <span class="st">"with_labels"</span>: <span class="va">True</span>,</span>
+<span id="cb6-41"><a href=""></a>        <span class="st">"node_size"</span>: <span class="dv">300</span>,</span>
+<span id="cb6-42"><a href=""></a>        <span class="st">"font_size"</span>: <span class="dv">6</span>,</span>
+<span id="cb6-43"><a href=""></a>        <span class="st">"node_color"</span>: <span class="st">"white"</span>,</span>
+<span id="cb6-44"><a href=""></a>        <span class="st">"edgecolors"</span>: <span class="st">"white"</span>,</span>
+<span id="cb6-45"><a href=""></a>        <span class="st">"linewidths"</span>: <span class="dv">1</span>,</span>
+<span id="cb6-46"><a href=""></a>        <span class="st">"width"</span>: <span class="dv">1</span>,</span>
+<span id="cb6-47"><a href=""></a>    }</span>
+<span id="cb6-48"><a href=""></a></span>
+<span id="cb6-49"><a href=""></a>    <span class="co"># Graph!</span></span>
+<span id="cb6-50"><a href=""></a>    nx.draw_networkx(graph, pos, <span class="op">**</span>options)</span>
+<span id="cb6-51"><a href=""></a>    ax.set_title(<span class="ss">f"Influenza SEIR Model Agent Contact (Day </span><span class="sc">{</span>frame<span class="sc">}</span><span class="ss">)"</span>)</span>
+<span id="cb6-52"><a href=""></a></span>
+<span id="cb6-53"><a href=""></a>ani <span class="op">=</span> FuncAnimation(fig, update, frames<span class="op">=</span><span class="bu">int</span>(days<span class="op">/</span><span class="dv">3</span>), interval<span class="op">=</span><span class="dv">200</span>, repeat<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb6-54"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -841,48 +852,48 @@ Milo Banks
 </div></section><section id="demo-multiple-viruses" class="slide level2">
 <h2>Demo: Multiple Viruses</h2>
 <div id="cell-multiple-viruses" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href=""></a>model <span class="op">=</span> epiworld.Model()</span>
-<span id="cb10-2"><a href=""></a>model.add_state(<span class="st">"Susceptible"</span>, epiworld.UpdateFun.default_update_susceptible())<span class="op">;</span></span>
-<span id="cb10-3"><a href=""></a>model.add_state(<span class="st">"Infected"</span>, epiworld.UpdateFun.default_update_exposed())<span class="op">;</span></span>
-<span id="cb10-4"><a href=""></a>model.add_state(<span class="st">"Recovered"</span>, epiworld.UpdateFun.default())<span class="op">;</span></span>
-<span id="cb10-5"><a href=""></a>model.add_state(<span class="st">"Removed"</span>, epiworld.UpdateFun.default())<span class="op">;</span></span>
-<span id="cb10-6"><a href=""></a></span>
-<span id="cb10-7"><a href=""></a>covid19 <span class="op">=</span> epiworld.Virus(</span>
-<span id="cb10-8"><a href=""></a>    name           <span class="op">=</span> <span class="st">'covid-19'</span>,</span>
-<span id="cb10-9"><a href=""></a>    prevalence     <span class="op">=</span> <span class="fl">.001</span>,</span>
-<span id="cb10-10"><a href=""></a>    as_proportion  <span class="op">=</span> <span class="va">False</span>,</span>
-<span id="cb10-11"><a href=""></a>    prob_infecting <span class="op">=</span> <span class="fl">0.2</span>,</span>
-<span id="cb10-12"><a href=""></a>    prob_recovery  <span class="op">=</span> <span class="fl">0.92</span>,</span>
-<span id="cb10-13"><a href=""></a>    prob_death     <span class="op">=</span> <span class="fl">0.08</span>,</span>
-<span id="cb10-14"><a href=""></a>    post_immunity  <span class="op">=</span> <span class="fl">0.7</span>,</span>
-<span id="cb10-15"><a href=""></a>    incubation     <span class="op">=</span> <span class="dv">5</span>,</span>
-<span id="cb10-16"><a href=""></a>)</span>
-<span id="cb10-17"><a href=""></a></span>
-<span id="cb10-18"><a href=""></a>flu <span class="op">=</span> epiworld.Virus(</span>
-<span id="cb10-19"><a href=""></a>    name           <span class="op">=</span> <span class="st">"flu"</span>,</span>
-<span id="cb10-20"><a href=""></a>    prevalence     <span class="op">=</span> <span class="fl">0.003</span>,</span>
-<span id="cb10-21"><a href=""></a>    as_proportion  <span class="op">=</span> <span class="va">False</span>,</span>
-<span id="cb10-22"><a href=""></a>    prob_infecting <span class="op">=</span> <span class="fl">1.0</span>,</span>
-<span id="cb10-23"><a href=""></a>    prob_recovery  <span class="op">=</span> <span class="fl">0.95</span>,</span>
-<span id="cb10-24"><a href=""></a>    prob_death     <span class="op">=</span> <span class="fl">0.05</span>,</span>
-<span id="cb10-25"><a href=""></a>    post_immunity  <span class="op">=</span> <span class="fl">0.6</span>,</span>
-<span id="cb10-26"><a href=""></a>    incubation     <span class="op">=</span> <span class="dv">9</span></span>
-<span id="cb10-27"><a href=""></a>)</span>
-<span id="cb10-28"><a href=""></a></span>
-<span id="cb10-29"><a href=""></a><span class="co"># Black magic.</span></span>
-<span id="cb10-30"><a href=""></a>flu.set_state(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)<span class="op">;</span></span>
-<span id="cb10-31"><a href=""></a>covid19.set_state(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)<span class="op">;</span></span>
-<span id="cb10-32"><a href=""></a></span>
-<span id="cb10-33"><a href=""></a><span class="co"># Add it to our model.</span></span>
-<span id="cb10-34"><a href=""></a>model.add_virus(flu)</span>
-<span id="cb10-35"><a href=""></a>model.add_virus(covid19)</span>
-<span id="cb10-36"><a href=""></a></span>
-<span id="cb10-37"><a href=""></a><span class="co"># We need agents to infect.</span></span>
-<span id="cb10-38"><a href=""></a>model.agents_smallworld(<span class="dv">100000</span>, <span class="dv">4</span>, <span class="va">False</span>, <span class="fl">0.01</span>)<span class="op">;</span></span>
-<span id="cb10-39"><a href=""></a></span>
-<span id="cb10-40"><a href=""></a><span class="co"># Run things.</span></span>
-<span id="cb10-41"><a href=""></a>model.run(<span class="dv">100</span>, <span class="dv">223</span>)</span>
-<span id="cb10-42"><a href=""></a>model.<span class="bu">print</span>(<span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a>model <span class="op">=</span> epiworld.Model()</span>
+<span id="cb7-2"><a href=""></a>model.add_state(<span class="st">"Susceptible"</span>, epiworld.UpdateFun.default_update_susceptible())<span class="op">;</span></span>
+<span id="cb7-3"><a href=""></a>model.add_state(<span class="st">"Infected"</span>, epiworld.UpdateFun.default_update_exposed())<span class="op">;</span></span>
+<span id="cb7-4"><a href=""></a>model.add_state(<span class="st">"Recovered"</span>, epiworld.UpdateFun.default())<span class="op">;</span></span>
+<span id="cb7-5"><a href=""></a>model.add_state(<span class="st">"Removed"</span>, epiworld.UpdateFun.default())<span class="op">;</span></span>
+<span id="cb7-6"><a href=""></a></span>
+<span id="cb7-7"><a href=""></a>covid19 <span class="op">=</span> epiworld.Virus(</span>
+<span id="cb7-8"><a href=""></a>    name           <span class="op">=</span> <span class="st">'covid-19'</span>,</span>
+<span id="cb7-9"><a href=""></a>    prevalence     <span class="op">=</span> <span class="fl">.001</span>,</span>
+<span id="cb7-10"><a href=""></a>    as_proportion  <span class="op">=</span> <span class="va">False</span>,</span>
+<span id="cb7-11"><a href=""></a>    prob_infecting <span class="op">=</span> <span class="fl">0.2</span>,</span>
+<span id="cb7-12"><a href=""></a>    prob_recovery  <span class="op">=</span> <span class="fl">0.92</span>,</span>
+<span id="cb7-13"><a href=""></a>    prob_death     <span class="op">=</span> <span class="fl">0.08</span>,</span>
+<span id="cb7-14"><a href=""></a>    post_immunity  <span class="op">=</span> <span class="fl">0.7</span>,</span>
+<span id="cb7-15"><a href=""></a>    incubation     <span class="op">=</span> <span class="dv">5</span>,</span>
+<span id="cb7-16"><a href=""></a>)</span>
+<span id="cb7-17"><a href=""></a></span>
+<span id="cb7-18"><a href=""></a>flu <span class="op">=</span> epiworld.Virus(</span>
+<span id="cb7-19"><a href=""></a>    name           <span class="op">=</span> <span class="st">"flu"</span>,</span>
+<span id="cb7-20"><a href=""></a>    prevalence     <span class="op">=</span> <span class="fl">0.003</span>,</span>
+<span id="cb7-21"><a href=""></a>    as_proportion  <span class="op">=</span> <span class="va">False</span>,</span>
+<span id="cb7-22"><a href=""></a>    prob_infecting <span class="op">=</span> <span class="fl">1.0</span>,</span>
+<span id="cb7-23"><a href=""></a>    prob_recovery  <span class="op">=</span> <span class="fl">0.95</span>,</span>
+<span id="cb7-24"><a href=""></a>    prob_death     <span class="op">=</span> <span class="fl">0.05</span>,</span>
+<span id="cb7-25"><a href=""></a>    post_immunity  <span class="op">=</span> <span class="fl">0.6</span>,</span>
+<span id="cb7-26"><a href=""></a>    incubation     <span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb7-27"><a href=""></a>)</span>
+<span id="cb7-28"><a href=""></a></span>
+<span id="cb7-29"><a href=""></a><span class="co"># Black magic.</span></span>
+<span id="cb7-30"><a href=""></a>flu.set_state(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)<span class="op">;</span></span>
+<span id="cb7-31"><a href=""></a>covid19.set_state(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)<span class="op">;</span></span>
+<span id="cb7-32"><a href=""></a></span>
+<span id="cb7-33"><a href=""></a><span class="co"># Add it to our model.</span></span>
+<span id="cb7-34"><a href=""></a>model.add_virus(flu)</span>
+<span id="cb7-35"><a href=""></a>model.add_virus(covid19)</span>
+<span id="cb7-36"><a href=""></a></span>
+<span id="cb7-37"><a href=""></a><span class="co"># We need agents to infect.</span></span>
+<span id="cb7-38"><a href=""></a>model.agents_smallworld(<span class="dv">100000</span>, <span class="dv">4</span>, <span class="va">False</span>, <span class="fl">0.01</span>)<span class="op">;</span></span>
+<span id="cb7-39"><a href=""></a></span>
+<span id="cb7-40"><a href=""></a><span class="co"># Run things.</span></span>
+<span id="cb7-41"><a href=""></a>model.run(<span class="dv">100</span>, <span class="dv">223</span>)</span>
+<span id="cb7-42"><a href=""></a>model.<span class="bu">print</span>(<span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -902,8 +913,8 @@ Agents' data        : (none)
 Number of entities  : 0
 Days (duration)     : 100 (of 100)
 Number of viruses   : 2
-Last run elapsed t  : 3.00ms
-Last run speed      : 3297.07 million agents x day / second
+Last run elapsed t  : 2.00ms
+Last run speed      : 3347.84 million agents x day / second
 Rewiring            : off
 
 Global events:
@@ -933,36 +944,36 @@ Transition Probabilities:
 </code></pre>
 </div>
 <div id="multiple-viruses" class="cell-output cell-output-display" data-execution_count="27">
-<pre><code>&lt;epiworldpy._core.Model at 0x12ca3def0&gt;</code></pre>
+<pre><code>&lt;epiworldpy._core.Model at 0x1690dc130&gt;</code></pre>
 </div>
 </div></section><section id="demo-model-control-tools" class="slide level2">
 <h2>Demo: Model Control Tools</h2>
 <div id="cell-model-control-tools" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href=""></a><span class="co"># Bring this back for simplicity.</span></span>
-<span id="cb13-2"><a href=""></a>model <span class="op">=</span> epiworld.ModelSIRCONN(</span>
-<span id="cb13-3"><a href=""></a>    name              <span class="op">=</span> <span class="st">'covid-19'</span>,</span>
-<span id="cb13-4"><a href=""></a>    n                 <span class="op">=</span> <span class="dv">50000</span>,</span>
-<span id="cb13-5"><a href=""></a>    prevalence        <span class="op">=</span> <span class="fl">.001</span>,</span>
-<span id="cb13-6"><a href=""></a>    contact_rate      <span class="op">=</span> <span class="fl">2.0</span>,</span>
-<span id="cb13-7"><a href=""></a>    transmission_rate <span class="op">=</span> <span class="fl">0.3</span>,</span>
-<span id="cb13-8"><a href=""></a>    recovery_rate     <span class="op">=</span> <span class="fl">0.13</span></span>
-<span id="cb13-9"><a href=""></a>)</span>
-<span id="cb13-10"><a href=""></a></span>
-<span id="cb13-11"><a href=""></a>vaccine <span class="op">=</span> epiworld.Tool(</span>
-<span id="cb13-12"><a href=""></a>    name                     <span class="op">=</span> <span class="st">"Vaccine"</span>,</span>
-<span id="cb13-13"><a href=""></a>    prevalence               <span class="op">=</span> <span class="fl">0.5</span>,</span>
-<span id="cb13-14"><a href=""></a>    as_proportion            <span class="op">=</span> <span class="va">True</span>,</span>
-<span id="cb13-15"><a href=""></a>    susceptibility_reduction <span class="op">=</span> <span class="fl">0.9</span>,</span>
-<span id="cb13-16"><a href=""></a>    transmission_reduction   <span class="op">=</span> <span class="fl">0.5</span>,</span>
-<span id="cb13-17"><a href=""></a>    recovery_enhancer        <span class="op">=</span> <span class="fl">0.5</span>,</span>
-<span id="cb13-18"><a href=""></a>    death_reduction          <span class="op">=</span> <span class="fl">0.9</span></span>
-<span id="cb13-19"><a href=""></a>)</span>
-<span id="cb13-20"><a href=""></a></span>
-<span id="cb13-21"><a href=""></a>model.add_tool(vaccine)</span>
-<span id="cb13-22"><a href=""></a></span>
-<span id="cb13-23"><a href=""></a><span class="co"># Run things.</span></span>
-<span id="cb13-24"><a href=""></a>model.run(<span class="dv">100</span>, <span class="dv">223</span>)</span>
-<span id="cb13-25"><a href=""></a>model.<span class="bu">print</span>(<span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href=""></a><span class="co"># Bring this back for simplicity.</span></span>
+<span id="cb10-2"><a href=""></a>model <span class="op">=</span> epiworld.ModelSIRCONN(</span>
+<span id="cb10-3"><a href=""></a>    name              <span class="op">=</span> <span class="st">'covid-19'</span>,</span>
+<span id="cb10-4"><a href=""></a>    n                 <span class="op">=</span> <span class="dv">50000</span>,</span>
+<span id="cb10-5"><a href=""></a>    prevalence        <span class="op">=</span> <span class="fl">.001</span>,</span>
+<span id="cb10-6"><a href=""></a>    contact_rate      <span class="op">=</span> <span class="fl">2.0</span>,</span>
+<span id="cb10-7"><a href=""></a>    transmission_rate <span class="op">=</span> <span class="fl">0.3</span>,</span>
+<span id="cb10-8"><a href=""></a>    recovery_rate     <span class="op">=</span> <span class="fl">0.13</span></span>
+<span id="cb10-9"><a href=""></a>)</span>
+<span id="cb10-10"><a href=""></a></span>
+<span id="cb10-11"><a href=""></a>vaccine <span class="op">=</span> epiworld.Tool(</span>
+<span id="cb10-12"><a href=""></a>    name                     <span class="op">=</span> <span class="st">"Vaccine"</span>,</span>
+<span id="cb10-13"><a href=""></a>    prevalence               <span class="op">=</span> <span class="fl">0.5</span>,</span>
+<span id="cb10-14"><a href=""></a>    as_proportion            <span class="op">=</span> <span class="va">True</span>,</span>
+<span id="cb10-15"><a href=""></a>    susceptibility_reduction <span class="op">=</span> <span class="fl">0.9</span>,</span>
+<span id="cb10-16"><a href=""></a>    transmission_reduction   <span class="op">=</span> <span class="fl">0.5</span>,</span>
+<span id="cb10-17"><a href=""></a>    recovery_enhancer        <span class="op">=</span> <span class="fl">0.5</span>,</span>
+<span id="cb10-18"><a href=""></a>    death_reduction          <span class="op">=</span> <span class="fl">0.9</span></span>
+<span id="cb10-19"><a href=""></a>)</span>
+<span id="cb10-20"><a href=""></a></span>
+<span id="cb10-21"><a href=""></a>model.add_tool(vaccine)</span>
+<span id="cb10-22"><a href=""></a></span>
+<span id="cb10-23"><a href=""></a><span class="co"># Run things.</span></span>
+<span id="cb10-24"><a href=""></a>model.run(<span class="dv">100</span>, <span class="dv">223</span>)</span>
+<span id="cb10-25"><a href=""></a>model.<span class="bu">print</span>(<span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -982,8 +993,8 @@ Agents' data        : (none)
 Number of entities  : 0
 Days (duration)     : 100 (of 100)
 Number of viruses   : 1
-Last run elapsed t  : 95.00ms
-Last run speed      : 52.57 million agents x day / second
+Last run elapsed t  : 101.00ms
+Last run speed      : 49.34 million agents x day / second
 Rewiring            : off
 
 Global events:
@@ -1012,27 +1023,27 @@ Transition Probabilities:
 </code></pre>
 </div>
 <div id="model-control-tools" class="cell-output cell-output-display" data-execution_count="28">
-<pre><code>&lt;epiworldpy._core.ModelSIRCONN at 0x10da6eeb0&gt;</code></pre>
+<pre><code>&lt;epiworldpy._core.ModelSIRCONN at 0x1690dcfb0&gt;</code></pre>
 </div>
 </div></section><section id="demo-model-control-tools-graph-proof" class="slide level2">
 <h2>Demo: Model Control Tools (Graph Proof)</h2>
 <div id="cell-model-control-tools-graph-proof" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href=""></a><span class="co"># Get data from the database.</span></span>
-<span id="cb16-2"><a href=""></a>transition_matrix <span class="op">=</span> pd.DataFrame(model.get_db().get_hist_transition_matrix(<span class="va">False</span>))</span>
-<span id="cb16-3"><a href=""></a>grouped <span class="op">=</span> transition_matrix.groupby([<span class="st">'dates'</span>, <span class="st">'states_to'</span>])[<span class="st">'counts'</span>].<span class="bu">sum</span>().unstack().fillna(<span class="dv">0</span>)</span>
-<span id="cb16-4"><a href=""></a>daily_incidence <span class="op">=</span> grouped.diff().fillna(<span class="dv">0</span>)</span>
-<span id="cb16-5"><a href=""></a></span>
-<span id="cb16-6"><a href=""></a><span class="co"># Plot!</span></span>
-<span id="cb16-7"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb16-8"><a href=""></a>plt.plot(daily_incidence.index, daily_incidence[<span class="st">'Infected'</span>], label<span class="op">=</span><span class="st">'New Infected'</span>)</span>
-<span id="cb16-9"><a href=""></a>plt.plot(daily_incidence.index, daily_incidence[<span class="st">'Recovered'</span>], label<span class="op">=</span><span class="st">'New Recovered'</span>)</span>
-<span id="cb16-10"><a href=""></a></span>
-<span id="cb16-11"><a href=""></a>plt.title(<span class="st">'Daily Incidence of Infected and Recovered Cases (w/ Vaccination)'</span>)</span>
-<span id="cb16-12"><a href=""></a>plt.xlabel(<span class="st">'Days'</span>)</span>
-<span id="cb16-13"><a href=""></a>plt.ylabel(<span class="st">'Number of New Cases'</span>)</span>
-<span id="cb16-14"><a href=""></a>plt.legend()</span>
-<span id="cb16-15"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb16-16"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href=""></a><span class="co"># Get data from the database.</span></span>
+<span id="cb13-2"><a href=""></a>transition_matrix <span class="op">=</span> pd.DataFrame(model.get_db().get_hist_transition_matrix(<span class="va">False</span>))</span>
+<span id="cb13-3"><a href=""></a>grouped <span class="op">=</span> transition_matrix.groupby([<span class="st">'dates'</span>, <span class="st">'states_to'</span>])[<span class="st">'counts'</span>].<span class="bu">sum</span>().unstack().fillna(<span class="dv">0</span>)</span>
+<span id="cb13-4"><a href=""></a>daily_incidence <span class="op">=</span> grouped.diff().fillna(<span class="dv">0</span>)</span>
+<span id="cb13-5"><a href=""></a></span>
+<span id="cb13-6"><a href=""></a><span class="co"># Plot!</span></span>
+<span id="cb13-7"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb13-8"><a href=""></a>plt.plot(daily_incidence.index, daily_incidence[<span class="st">'Infected'</span>], label<span class="op">=</span><span class="st">'New Infected'</span>)</span>
+<span id="cb13-9"><a href=""></a>plt.plot(daily_incidence.index, daily_incidence[<span class="st">'Recovered'</span>], label<span class="op">=</span><span class="st">'New Recovered'</span>)</span>
+<span id="cb13-10"><a href=""></a></span>
+<span id="cb13-11"><a href=""></a>plt.title(<span class="st">'Daily Incidence of Infected and Recovered Cases (w/ Vaccination)'</span>)</span>
+<span id="cb13-12"><a href=""></a>plt.xlabel(<span class="st">'Days'</span>)</span>
+<span id="cb13-13"><a href=""></a>plt.ylabel(<span class="st">'Number of New Cases'</span>)</span>
+<span id="cb13-14"><a href=""></a>plt.legend()</span>
+<span id="cb13-15"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb13-16"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
@@ -1047,30 +1058,30 @@ Transition Probabilities:
 </div></section><section id="demo-model-control-tools-graph-proof-1" class="slide level2">
 <h2>Demo: Model Control Tools (Graph Proof)</h2>
 <div id="cell-model-control-tools-graph-proof-2" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href=""></a><span class="co"># Get data from the database.</span></span>
-<span id="cb17-2"><a href=""></a>reproductive_data <span class="op">=</span> model.get_db().get_reproductive_number()</span>
-<span id="cb17-3"><a href=""></a></span>
-<span id="cb17-4"><a href=""></a><span class="co"># Start the plotting!</span></span>
-<span id="cb17-5"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb17-6"><a href=""></a></span>
-<span id="cb17-7"><a href=""></a><span class="cf">for</span> virus_id, virus_data <span class="kw">in</span> <span class="bu">enumerate</span>(reproductive_data):</span>
-<span id="cb17-8"><a href=""></a>    average_rts <span class="op">=</span> <span class="bu">list</span>()</span>
-<span id="cb17-9"><a href=""></a></span>
-<span id="cb17-10"><a href=""></a>    <span class="cf">for</span> date_data <span class="kw">in</span> virus_data:</span>
-<span id="cb17-11"><a href=""></a>        <span class="cf">if</span> <span class="kw">not</span> date_data:</span>
-<span id="cb17-12"><a href=""></a>            <span class="cf">continue</span></span>
-<span id="cb17-13"><a href=""></a></span>
-<span id="cb17-14"><a href=""></a>        keys_array <span class="op">=</span> np.array(<span class="bu">list</span>(date_data.values()), dtype<span class="op">=</span>np.float64)</span>
-<span id="cb17-15"><a href=""></a>        average_rts.append(np.mean(keys_array))</span>
-<span id="cb17-16"><a href=""></a></span>
-<span id="cb17-17"><a href=""></a>    plt.plot(<span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(average_rts)), average_rts, label<span class="op">=</span><span class="ss">f"Virus </span><span class="sc">{</span>virus_id<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb17-18"><a href=""></a></span>
-<span id="cb17-19"><a href=""></a>plt.xlabel(<span class="st">'Date'</span>)</span>
-<span id="cb17-20"><a href=""></a>plt.ylabel(<span class="st">'Effective Reproductive Rate'</span>)</span>
-<span id="cb17-21"><a href=""></a>plt.title(<span class="st">'COVID-19 SIR Model Effective Reproductive Rate (w/ Vaccination)'</span>)</span>
-<span id="cb17-22"><a href=""></a>plt.legend()</span>
-<span id="cb17-23"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb17-24"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href=""></a><span class="co"># Get data from the database.</span></span>
+<span id="cb14-2"><a href=""></a>reproductive_data <span class="op">=</span> model.get_db().get_reproductive_number()</span>
+<span id="cb14-3"><a href=""></a></span>
+<span id="cb14-4"><a href=""></a><span class="co"># Start the plotting!</span></span>
+<span id="cb14-5"><a href=""></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb14-6"><a href=""></a></span>
+<span id="cb14-7"><a href=""></a><span class="cf">for</span> virus_id, virus_data <span class="kw">in</span> <span class="bu">enumerate</span>(reproductive_data):</span>
+<span id="cb14-8"><a href=""></a>    average_rts <span class="op">=</span> <span class="bu">list</span>()</span>
+<span id="cb14-9"><a href=""></a></span>
+<span id="cb14-10"><a href=""></a>    <span class="cf">for</span> date_data <span class="kw">in</span> virus_data:</span>
+<span id="cb14-11"><a href=""></a>        <span class="cf">if</span> <span class="kw">not</span> date_data:</span>
+<span id="cb14-12"><a href=""></a>            <span class="cf">continue</span></span>
+<span id="cb14-13"><a href=""></a></span>
+<span id="cb14-14"><a href=""></a>        keys_array <span class="op">=</span> np.array(<span class="bu">list</span>(date_data.values()), dtype<span class="op">=</span>np.float64)</span>
+<span id="cb14-15"><a href=""></a>        average_rts.append(np.mean(keys_array))</span>
+<span id="cb14-16"><a href=""></a></span>
+<span id="cb14-17"><a href=""></a>    plt.plot(<span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(average_rts)), average_rts, label<span class="op">=</span><span class="ss">f"Virus </span><span class="sc">{</span>virus_id<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb14-18"><a href=""></a></span>
+<span id="cb14-19"><a href=""></a>plt.xlabel(<span class="st">'Date'</span>)</span>
+<span id="cb14-20"><a href=""></a>plt.ylabel(<span class="st">'Effective Reproductive Rate'</span>)</span>
+<span id="cb14-21"><a href=""></a>plt.title(<span class="st">'COVID-19 SIR Model Effective Reproductive Rate (w/ Vaccination)'</span>)</span>
+<span id="cb14-22"><a href=""></a>plt.legend()</span>
+<span id="cb14-23"><a href=""></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb14-24"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section><section id="demo-model-control-tools-graph-proof-1-output" class="slide level2 output-location-slide"><h2>Demo: Model Control Tools (Graph Proof)</h2><div class="cell output-location-slide" data-execution_count="10">
@@ -1106,7 +1117,7 @@ Transition Probabilities:
 <h1>Questions</h1>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p>Epiworld and its various wrappers - <a href="https://EpiForeSITE.github.io/epiworld-milo-talk" class="uri">https://EpiForeSITE.github.io/epiworld-milo-talk</a></p>
+<p>Epiworld talk - <a href="https://github.com/EpiForeSITE/epiworld-milo-talk" class="uri">https://github.com/EpiForeSITE/epiworld-milo-talk</a></p>
 </div>
 </div>
 </section>
