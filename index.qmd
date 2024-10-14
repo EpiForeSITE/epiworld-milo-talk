@@ -339,8 +339,19 @@ import pandas as pd
 
 # Get the data from the database.
 transition_matrix = pd.DataFrame(model.get_db().get_hist_transition_matrix(False))
-grouped = transition_matrix.groupby(['dates', 'states_to'])['counts'].sum().unstack().fillna(0)
-daily_incidence = grouped.diff().fillna(0)
+transition_matrix
+
+# Subsetting rows where states_from != states_to.
+transition_matrix = transition_matrix[
+  transition_matrix['states_from'] != transition_matrix['states_to']
+  ]
+
+# Selecting only those where counts > 0
+transition_matrix = transition_matrix[
+  transition_matrix['counts'] > 0
+  ]
+
+daily_incidence = transition_matrix.groupby(['dates', 'states_to'])['counts'].sum().unstack()
 
 # Plot!
 plt.figure(figsize=(10, 6))
@@ -369,6 +380,14 @@ from collections import defaultdict
 
 # Get the data from the database.
 generation_time = model.get_db().get_generation_time()
+
+generation_time = pd.DataFrame(generation_time)
+
+# Filtering where gentimes is not -1
+generation_time = generation_time[
+  generation_time['gentimes'] != -1
+  ]
+
 agents = generation_time['agents']
 viruses = generation_time['viruses']
 times = generation_time['times']
@@ -571,8 +590,7 @@ model.print(False)
 
 # Get data from the database.
 transition_matrix = pd.DataFrame(model.get_db().get_hist_transition_matrix(False))
-grouped = transition_matrix.groupby(['dates', 'states_to'])['counts'].sum().unstack().fillna(0)
-daily_incidence = grouped.diff().fillna(0)
+daily_incidence = transition_matrix.groupby(['dates', 'states_to'])['counts'].sum().unstack().fillna(0)
 
 # Plot!
 plt.figure(figsize=(10, 6))
