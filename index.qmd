@@ -7,7 +7,7 @@ author:
 format:
   revealjs:
     slide-number: true
-    footer: "Epiworld and its various wrappers - <https://EpiForeSITE.github.io/epiworld-milo-talk>"
+    footer: "Epiworld talk - <https://github.com/EpiForeSITE/epiworld-milo-talk>"
     code-annotations: below
     chalkboard:
       buttons: false
@@ -132,7 +132,7 @@ model.print();
 
 ---
 
-## Demo: Influenza Outbreak in SLC (EpiworldR)
+<!-- ## Demo: Influenza Outbreak in SLC (EpiworldR)
 
 ::: {.incremental}
 
@@ -143,7 +143,7 @@ model.print();
 
 :::
 
----
+--- -->
 
 ## Demo: Influenza Outbreak in SLC (EpiworldPy)
 
@@ -169,7 +169,7 @@ model.print()
 
 :::
 
----
+<!-- ---
 
 ## Side by Side Comparison
 
@@ -208,7 +208,7 @@ model.print()
 
 :::
 
-:::
+::: -->
 
 ---
 
