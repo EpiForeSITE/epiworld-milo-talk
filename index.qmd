@@ -351,7 +351,7 @@ transition_matrix = transition_matrix[
   transition_matrix['counts'] > 0
   ]
 
-daily_incidence = transition_matrix.groupby(['dates', 'states_to'])['counts'].sum().unstack()
+daily_incidence = transition_matrix.groupby(['dates', 'states_to'])['counts'].sum().unstack().fillna(0)
 
 # Plot!
 plt.figure(figsize=(10, 6))
